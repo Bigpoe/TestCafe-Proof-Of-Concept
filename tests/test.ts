@@ -2,14 +2,14 @@ import { testValues } from "../utils/testValues";
 import { example } from "../pages/example";
 import { thankYou } from "../pages/thankYou";
 
-fixture`Login Test`.page(testValues.url).beforeEach(async (t) => {
+fixture`TestCafe example page actions`.page(testValues.url).beforeEach(async (t) => {
   await t.setNativeDialogHandler((type) => {
     if (type === "confirm" || type === "alert") return true;
     return null;
   });
 });
 
-test(`Validate that Submit is not enabled without a value for name`, async (t) => {
+test(`Perform some action over the example page`, async (t) => {
   await example.checkSubmitButtonIsDisabled();
   await example.clickPopulateButton();
   await example.replaceWithYourNameInput();
