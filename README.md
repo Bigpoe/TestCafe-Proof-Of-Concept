@@ -14,17 +14,15 @@ Or run for SSH.
 
 `git clone git@github.com:Bigpoe/TestCafe-Proof-Of-Concept.git`
 
-Move to the folder where the repository was downloaded.
+Move to the folder **TestCafe-Proof-Of-Concept** by doing
+
+`cd TestCafe-Proof-Of-Concept`
 
 Install dependencies running this command
 
 `npm install`
 
 ### Execute the tests
-
-Move to the **TestCafe-Proof-Of-Concept** folder by doing 
-
-`cd TestCafe-Proof-Of-Concept`
 
 Execute the following command to run the test script.
 
