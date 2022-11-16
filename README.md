@@ -6,13 +6,13 @@ TestCafe requires the most recent version of NodeJS. Follow the instructions on 
 
 ## Installation
 
-Install TestCafe globally on your computer. Run the following command to install the testcafe package from npm:
+Clone the repository by opening a new terminal and them run for HTTPS.
 
-`npm install -g testcafe`
+`git clone https://github.com/Bigpoe/TestCafe-Proof-Of-Concept.git`
 
-Clone the repository by opening a new terminal and them run
+Or run for SSH.
 
-`git clone sdsdsd`
+`git clone git@github.com:Bigpoe/TestCafe-Proof-Of-Concept.git`
 
 Move to the folder where the repository was downloaded.
 
@@ -22,7 +22,19 @@ Install dependencies running this command
 
 ### Execute the tests
 
+Move to the **TestCafe-Proof-Of-Concept** folder by doing 
+
+`cd TestCafe-Proof-Of-Concept`
+
 Execute the following command to run the test script.
+
+`npm run testChrome`
+
+or 
+
+`npx testcafe chrome`
+
+By default, TestCafe looks for the **tests** folder. I you want to specify a test script, then you need to add the path to you r test script.
 
 `npm run testChrome ./tests/test.ts`
 
